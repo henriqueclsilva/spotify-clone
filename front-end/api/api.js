@@ -1,7 +1,7 @@
-import "dotenv/config";
+
 import axios from "axios";
 
-const URL = NODE_ENV === "https://spotify-clone-ixya.onrender.com/api";
+const URL = "/api";
 
 const responseArtists = await axios.get(`${URL}/artists`);
 const responseSongs = await axios.get(`${URL}/songs`);
